@@ -1,0 +1,16 @@
+.circularKpiMeter {
+  display: flex;
+  flex-direction: column;
+}
+
+.text {
+  text-align: center;
+  font-size: var(--font-size-large);
+  font-weight: var(--font-weight-400);
+  &.fc-grey {
+    color: var(--color-text-muted);
+  }
+  &.fc-default {
+    color: currentColor;
+  }
+}

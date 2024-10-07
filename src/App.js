@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import KPIMeter from "./KPIMeter";
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <KPIMeter
+        kpi={0.5}
+        maxValue={1.0}
+        circleRatio={0.7}
+        strokeWidth={6}
+        rotationAngle={-126}
+        transformOrigin={"center center"}
+        strokeLinecap={"round"}
+        fontSize={25}
+        fontWeight={600}
+        titleColor="grey"
+        fill={"#333"}
+        style={{ width: "70px", height: "100%" }}
+      />
+    </>
   );
-}
+};
 
 export default App;
